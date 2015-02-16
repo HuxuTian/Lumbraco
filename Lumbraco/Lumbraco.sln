@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31010.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lumbraco", "Lumbraco\Lumbraco.csproj", "{C58D0D41-952B-48B2-ADD4-491A626D0A0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lumbraco.Demo", "Lumbraco.Demo\Lumbraco.Demo.csproj", "{24AF6837-5209-403F-AEC4-F167970AE409}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C58D0D41-952B-48B2-ADD4-491A626D0A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C58D0D41-952B-48B2-ADD4-491A626D0A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C58D0D41-952B-48B2-ADD4-491A626D0A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AF6837-5209-403F-AEC4-F167970AE409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AF6837-5209-403F-AEC4-F167970AE409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AF6837-5209-403F-AEC4-F167970AE409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AF6837-5209-403F-AEC4-F167970AE409}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

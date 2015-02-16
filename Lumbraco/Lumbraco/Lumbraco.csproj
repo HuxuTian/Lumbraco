@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\IndexConfigSection.cs" />
+    <Compile Include="Configuration\IndexConfiguration.cs" />
     <Compile Include="Configuration\IndexFieldConfig.cs" />
     <Compile Include="Configuration\IndexFieldConfigCollection.cs" />
     <Compile Include="Configuration\IndexSetConfig.cs" />

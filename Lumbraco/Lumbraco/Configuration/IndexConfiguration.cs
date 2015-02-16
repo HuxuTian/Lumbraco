@@ -17,7 +17,7 @@ namespace Lumbraco.Configuration
         {
             var fileMap = new ConfigurationFileMap(configFilePath);
             var config = ConfigurationManager.OpenMappedMachineConfiguration(fileMap);
-            var config2 = config.GetSection(sectionName);
+            //var config2 = config.GetSection(sectionName);
             return (IndexConfiguration)config.GetSection(sectionName) ?? new IndexConfiguration();
         }
 
