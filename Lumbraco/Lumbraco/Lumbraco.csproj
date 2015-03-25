@@ -41,15 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\IndexConfiguration.cs" />
-    <Compile Include="Configuration\IndexFieldConfig.cs" />
-    <Compile Include="Configuration\IndexFieldConfigCollection.cs" />
-    <Compile Include="Configuration\IndexSetConfig.cs" />
-    <Compile Include="Configuration\IndexSetConfigCollection.cs" />
-    <Compile Include="Indexer\FieldIndexType.cs" />
-    <Compile Include="Indexer\IIndexField.cs" />
-    <Compile Include="Indexer\IndexField.cs" />
-    <Compile Include="Indexer\TermVectorType.cs" />
+    <Compile Include="Index\Configuration.cs" />
+    <Compile Include="Index\IndexField.cs" />
+    <Compile Include="Index\IndexSet.cs" />
+    <Compile Include="Index\LumbracoIndexSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

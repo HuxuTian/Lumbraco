@@ -1,4 +1,4 @@
-﻿using Lumbraco.Configuration;
+﻿using Lumbraco.Index;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,14 @@ namespace Lumbraco.Demo.Masterpages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var config = IndexConfiguration.GetConfig();
+            var path = System.Web.Hosting.HostingEnvironment.MapPath("~/Config/LumbracoIndex.config");
+            //var if1 = new IndexField() { FieldName = "productName", IndexType = "NOT_ANALYZED", StorageType = "YES", TermVector = "NO", FieldType = "System.String" };
+            //var if2 = new IndexField() { FieldName = "casName", IndexType = "NOT_ANALYZED", StorageType = "YES", TermVector = "NO", FieldType = "System.String" };
+            //var is1 = new IndexSet() { DocumentType = "Product", IndexFields = new IndexField[] { if1, if2 } };
+            //var is2 = new IndexSet() { DocumentType = "Flower", IndexFields = new IndexField[] { if1, if2 } };
+            //var i1 = new LumbracoIndexSet() { IndexSets = new IndexSet[] { is1, is2 } };
+            //IndexConfiguration.WriteConfiguration(path, i1);
+            var config = Configuration.ReadConfiguration(path);
         }
     }
 }
