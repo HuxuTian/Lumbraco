@@ -23,6 +23,5 @@ namespace Lumbraco.IndexConfig
         [XmlAttribute("FieldType")]
         public string FieldType { get; set; }
 
-        public IComputedIndexField MyProperty { get; set; }
     }
 }

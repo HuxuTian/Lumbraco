@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lumbraco
+namespace Lumbraco.IndexService
 {
     public static class FieldHelper
     {

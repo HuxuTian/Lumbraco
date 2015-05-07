@@ -49,10 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FieldHelper.cs" />
-    <Compile Include="IComputedField.cs" />
-    <Compile Include="IIndexable.cs" />
-    <Compile Include="IndexService.cs" />
+    <Compile Include="IndexService\FieldHelper.cs" />
+    <Compile Include="IndexService\IComputedField.cs" />
+    <Compile Include="IndexService\IIndexable.cs" />
+    <Compile Include="IndexService\IndexService.cs" />
     <Compile Include="IndexService\ComputedFieldIndexer.cs" />
     <Compile Include="IndexConfig\Configuration.cs" />
     <Compile Include="IndexService\CustomFieldIndexer.cs" />
