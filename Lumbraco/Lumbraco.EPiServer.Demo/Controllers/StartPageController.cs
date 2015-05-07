@@ -13,7 +13,13 @@ namespace Lumbraco.EPiServer.Demo.Controllers
     {
         public ActionResult Index(StartPage currentPage)
         {
+            DataFactory.Instance.PublishingContent += Instance_PublishingContent;
             return View(currentPage);
+        }
+
+        void Instance_PublishingContent(object sender, ContentEventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
