@@ -11,7 +11,7 @@ namespace Lumbraco
 
     }
 
-    public interface IComputedIndexField<T> : IComputedIndexField
+    public interface IComputedIndexField<T> : IComputedIndexField, IIndexable
     {
         string ComputeFieldValue(T item);
     }

@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace Lumbraco
 {
-    public interface IIndexable
+    public interface IIndexable { }
+
+    public interface IIndexable<TObject> : IIndexable
     {
-        Field GetField<TObject>(TObject obj);
+        Field GetField(TObject obj);
     }
 }
