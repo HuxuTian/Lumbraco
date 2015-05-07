@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace Lumbraco.IndexService
+namespace Lumbraco.IndexConfig
 {
     public class IndexField
     {

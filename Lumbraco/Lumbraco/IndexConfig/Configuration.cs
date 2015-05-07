@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Xml.Serialization;
 
-namespace Lumbraco.IndexService
+namespace Lumbraco.IndexConfig
 {
     public static class Configuration
     {

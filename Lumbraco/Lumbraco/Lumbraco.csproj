@@ -54,12 +54,12 @@
     <Compile Include="IIndexable.cs" />
     <Compile Include="IndexService.cs" />
     <Compile Include="IndexService\ComputedFieldIndexer.cs" />
-    <Compile Include="IndexService\Configuration.cs" />
+    <Compile Include="IndexConfig\Configuration.cs" />
     <Compile Include="IndexService\CustomFieldIndexer.cs" />
     <Compile Include="IndexService\DefaultIndexer.cs" />
-    <Compile Include="IndexService\IndexField.cs" />
-    <Compile Include="IndexService\IndexSet.cs" />
-    <Compile Include="IndexService\LumbracoIndexSet.cs" />
+    <Compile Include="IndexConfig\IndexField.cs" />
+    <Compile Include="IndexConfig\IndexSet.cs" />
+    <Compile Include="IndexConfig\LumbracoIndexSet.cs" />
     <Compile Include="IndexService\TypeIndexer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

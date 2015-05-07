@@ -1,4 +1,4 @@
-﻿using Lumbraco.IndexService;
+﻿using Lumbraco.IndexConfig;
 using System;
 using System.Collections.Generic;
 using System.Linq;
