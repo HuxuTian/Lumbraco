@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Lumbraco.IndexConfig
+namespace Lumbraco.Core.IndexConfig
 {
     public class LumbracoIndexSet
     {

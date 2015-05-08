@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lumbraco.IndexService
+namespace Lumbraco.Core.IndexService
 {
     public static class FieldHelper
     {
-        public static Field GetField(Lumbraco.IndexConfig.ComputedField field, string fieldValue)
+        public static Field GetField(Lumbraco.Core.IndexConfig.ComputedField field, string fieldValue)
         {
             var fieldName = field.FieldName;
 
-            //var indexField = new Field(field.FieldName, fieldValue, field.StorageType, )
+            //var indexField = new Field(field.Name, fieldValue, field.StorageType, )
             return null;
         }
 

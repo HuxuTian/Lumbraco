@@ -138,9 +138,9 @@
     <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lumbraco\Lumbraco.csproj">
+    <ProjectReference Include="..\Lumbraco\Lumbraco.Core.csproj">
       <Project>{c58d0d41-952b-48b2-add4-491a626d0a0e}</Project>
-      <Name>Lumbraco</Name>
+      <Name>Lumbraco.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

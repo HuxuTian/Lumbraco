@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lumbraco.IndexService
+namespace Lumbraco.Core.IndexService
 {
-    public interface IIndexable
+    public interface IIndexable<T>
     {
-        Field GetField<T>(T obj);
+        Field GetField(T item);
     }
 }

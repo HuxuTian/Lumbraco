@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lumbraco.IndexService
+namespace Lumbraco.Core.IndexService
 {
     public class IndexService<T>
     {

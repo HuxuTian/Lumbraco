@@ -1,13 +1,12 @@
-﻿using Lumbraco.IndexService;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace Lumbraco.IndexConfig
+namespace Lumbraco.Core.IndexConfig
 {
-    public class ComputedField : ComputedFieldIndexer, IField
+    public class ComputedField
     {
         [XmlAttribute("FieldName")]
         public string FieldName { get; set; }
