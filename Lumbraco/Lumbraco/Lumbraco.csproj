@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="IndexConfig\CustomField.cs" />
     <Compile Include="IndexConfig\DefaultField.cs" />
+    <Compile Include="IndexConfig\IField.cs" />
     <Compile Include="IndexService\FieldHelper.cs" />
     <Compile Include="IndexService\IComputedField.cs" />
     <Compile Include="IndexService\IIndexable.cs" />

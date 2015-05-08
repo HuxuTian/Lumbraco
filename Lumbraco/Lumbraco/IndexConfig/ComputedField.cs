@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace Lumbraco.IndexConfig
 {
-    public class ComputedField
+    public class ComputedField : ComputedFieldIndexer, IField
     {
         [XmlAttribute("FieldName")]
         public string FieldName { get; set; }
@@ -24,5 +24,7 @@ namespace Lumbraco.IndexConfig
         [XmlAttribute("FieldType")]
         public string FieldType { get; set; }
 
+        [XmlIgnoreAttribute]
+        public string Value { get; set; }
     }
 }

@@ -9,6 +9,10 @@ namespace Lumbraco.IndexConfig
 {
     public class LumbracoIndexSet
     {
+        public DefaultField DefaultField { get; set; }
         public ComputedField[] ComputedFields { get; set; }
+
+        public TypeField[] TypeFields { get; set; }
+        public CustomField[] CustomFields { get; set; }
     }
 }

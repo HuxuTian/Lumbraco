@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lumbraco.IndexService
+namespace Lumbraco.Index
 {
-    public interface IComputedIndexField
+    class IndexConfig
     {
-        string ComputeFieldValue<T>(T item);
     }
 }
