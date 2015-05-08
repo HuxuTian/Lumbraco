@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Lumbraco.IndexService
 {
-    public class IndexService<TObject>
+    public class IndexService<T>
     {
-        private static void addToIndex(TObject obj, IndexWriter writer)
+        private static void addToIndex(T obj, IndexWriter writer)
         {
             var document = new Document();
 

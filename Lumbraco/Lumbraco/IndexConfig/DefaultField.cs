@@ -1,14 +1,14 @@
-﻿using System;
+﻿using Lumbraco.IndexService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace Lumbraco.IndexConfig
 {
-    public class LumbracoIndexSet
+    public class DefaultField
     {
-        public ComputedField[] ComputedFields { get; set; }
+
     }
 }

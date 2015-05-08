@@ -6,15 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lumbraco.IndexService
 {
-    public class ComputedFieldIndexer<T> : IIndexable<T>, IComputedIndexField<T>
+    public class TypeFieldIndexer<T> : IIndexable<T>
     {
-
         public Lucene.Net.Documents.Field GetField(T obj)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string ComputeFieldValue(T item)
         {
             throw new NotImplementedException();
         }

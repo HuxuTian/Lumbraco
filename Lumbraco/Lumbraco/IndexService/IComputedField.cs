@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lumbraco.IndexService
 {
-    public interface IComputedIndexField
-    {
+    public interface IComputedIndexField { }
 
-    }
-
-    public interface IComputedIndexField<T> : IComputedIndexField, IIndexable
+    public interface IComputedIndexField<T> : IComputedIndexField
     {
         string ComputeFieldValue(T item);
     }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lumbraco.IndexService
 {
-    public class CustomFieldIndexer : IIndexable
+    public class CustomFieldIndexer<T> : IIndexable<T>
     {
-        public Lucene.Net.Documents.Field GetField<TObject>(TObject obj)
+        public Lucene.Net.Documents.Field GetField(T obj)
         {
             throw new NotImplementedException();
         }

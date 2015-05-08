@@ -9,7 +9,7 @@ namespace Lumbraco.IndexService
 {
     public static class FieldHelper
     {
-        public static Field GetField(Lumbraco.IndexConfig.IndexField field, string fieldValue)
+        public static Field GetField(Lumbraco.IndexConfig.ComputedField field, string fieldValue)
         {
             var fieldName = field.FieldName;
 

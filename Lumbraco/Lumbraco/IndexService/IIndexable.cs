@@ -9,8 +9,8 @@ namespace Lumbraco.IndexService
 {
     public interface IIndexable { }
 
-    public interface IIndexable<TObject> : IIndexable
+    public interface IIndexable<T> : IIndexable
     {
-        Field GetField(TObject obj);
+        Field GetField(T obj);
     }
 }

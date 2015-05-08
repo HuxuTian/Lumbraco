@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IndexConfig\CustomField.cs" />
+    <Compile Include="IndexConfig\DefaultField.cs" />
     <Compile Include="IndexService\FieldHelper.cs" />
     <Compile Include="IndexService\IComputedField.cs" />
     <Compile Include="IndexService\IIndexable.cs" />
@@ -56,11 +58,11 @@
     <Compile Include="IndexService\ComputedFieldIndexer.cs" />
     <Compile Include="IndexConfig\Configuration.cs" />
     <Compile Include="IndexService\CustomFieldIndexer.cs" />
-    <Compile Include="IndexService\DefaultIndexer.cs" />
-    <Compile Include="IndexConfig\IndexField.cs" />
-    <Compile Include="IndexConfig\IndexSet.cs" />
+    <Compile Include="IndexService\DefaultFieldIndexer.cs" />
+    <Compile Include="IndexConfig\ComputedField.cs" />
+    <Compile Include="IndexConfig\TypeField.cs" />
     <Compile Include="IndexConfig\LumbracoIndexSet.cs" />
-    <Compile Include="IndexService\TypeIndexer.cs" />
+    <Compile Include="IndexService\TypeFieldIndexer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
