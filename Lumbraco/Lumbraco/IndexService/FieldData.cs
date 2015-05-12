@@ -1,37 +1,25 @@
-﻿using EPiServer.Core;
-using Lumbraco.Core.IndexConfig;
+﻿using Lucene.Net.Documents;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Lumbraco.Core.IndexService;
-using Lucene.Net.Documents;
 
-namespace Lumbraco.EPi
+namespace Lumbraco.Core.IndexService
 {
-    public class FieldData
+    public class FieldData<T>
     {
         public string FieldName { get; set; }
+
+        public string PropertyName { get; set; }
+
+        public string PropertyType { get; set; }
 
         public Field.Store StorageType { get; set; }
 
         public Field.Index IndexType { get; set; }
 
         public Field.TermVector TermVector { get; set; }
-
-        public object FieldValue { get; set; }
-
-        public ContentData ContentData { get; set; }
-
-        public FieldData(PropertyData propertyData, BaseField field)
-        {
-            FieldName = propertyData.Name;
-            StorageType = GetFieldStoreType(field.StorageType);
-            IndexType = GetFieldIndexType(field.IndexType);
-            TermVector = GetTermVector(field.TermVector);
-            FieldValue = propertyData.Value;
-        }
 
         public Field.Index GetFieldIndexType(string indexType)
         {

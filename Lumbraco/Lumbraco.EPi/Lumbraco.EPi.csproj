@@ -48,6 +48,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,9 +59,7 @@
     <Compile Include="FieldBase.cs" />
     <Compile Include="FieldData.cs" />
     <Compile Include="IndexService\ComputedFieldIndexer.cs" />
-    <Compile Include="IndexService\CustomFieldIndexer.cs" />
-    <Compile Include="IndexService\DefaultFieldIndexer.cs" />
-    <Compile Include="IndexService\TypeFieldIndexer.cs" />
+    <Compile Include="IndexService\DateFieldIndexer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

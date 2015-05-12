@@ -8,6 +8,8 @@ namespace Lumbraco.Core.IndexService
 {
     public interface IComputedIndexField<T>
     {
-        string ComputeFieldValue(T item);
+        string FieldName { get; set; }
+        string FieldType { get; set; }
+        object ComputeFieldValue(T item);
     }
 }

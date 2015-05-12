@@ -55,5 +55,24 @@ namespace Lumbraco.Core.IndexService
             var type = Type.GetType(fieldType);
             return null;
         }
+
+        public static Field.TermVector GetTermVector(string termVector)
+        {
+            switch (termVector)
+            {
+                case "NO":
+                    return Field.TermVector.NO;
+                case "YES":
+                    return Field.TermVector.YES;
+                case "WITH_POSITIONS":
+                    return Field.TermVector.WITH_POSITIONS;
+                case "WITH_OFFSETS":
+                    return Field.TermVector.WITH_OFFSETS;
+                case "WITH_POSITIONS_OFFSETS":
+                    return Field.TermVector.WITH_POSITIONS_OFFSETS;
+                default:
+                    return Field.TermVector.NO;
+            }
+        }
     }
 }

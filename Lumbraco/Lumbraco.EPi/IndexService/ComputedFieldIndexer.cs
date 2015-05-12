@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 using Lumbraco.Core.IndexService;
 using EPiServer.Core;
 using Lumbraco.Core.IndexConfig;
+using Lumbraco.EPi;
 
 namespace Lumbraco.IndexService
 {
-    public class ComputedFieldIndexer : IIndexable<IField>, IComputedIndexField<ContentData>
+    public class ComputedField : IComputedIndexField<ContentData>
     {
-        public Lucene.Net.Documents.Field GetField(IField item)
-        {
-            return null; ;// return new Lucene.Net.Documents.Field(item.Name, item.Value, item.StorageType, item.IndexType, item.TermVector);
-        }
+        public string FieldName { get; set; }
 
-        public string ComputeFieldValue(ContentData item)
+        public string FieldType { get; set; }
+
+        public object ComputeFieldValue(ContentData item)
         {
-            return string.Empty;
+            throw new NotImplementedException();
         }
     }
 }
